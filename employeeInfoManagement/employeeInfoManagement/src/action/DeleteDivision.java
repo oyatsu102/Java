@@ -42,10 +42,5 @@ public class DeleteDivision implements CommonLogic{
 			ad.execute(request, response);
 			return "AllDivision.jsp";
 		}
-
-
-
-
 	}
-
 }
