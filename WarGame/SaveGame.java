@@ -12,9 +12,7 @@ import java.nio.file.Paths;
 バイナリファイルに書き込み(シリアライズ)、このファイルをデシリアライズ化してオブジェクトにする。*/
 
 public class SaveGame implements Serializable{
-	/**
-	 *
-	 */
+	
 	private static final long serialVersionUID = 912725257736758369L;
 
 	WarGame wg;//ここでインスタンス化するとオーバーフローする
