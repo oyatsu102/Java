@@ -4,7 +4,6 @@ public class TrumpGame {
 	public static void main(String[] args) {
 
 		String continueOrNot = "LoseAndYes";
-		//int increasedChip = 0;
 		BigOrSmall bos = new BigOrSmall();
 		Card selectedCardA;//1枚目に引いたカード
 		Card selectedCardB = bos.continueGame();//2枚目のカードを引く(初回)
