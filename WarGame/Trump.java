@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Trump implements Serializable{
-	/**
-	 *
-	 */
+	
 	private static final long serialVersionUID = -7100853611278325675L;
 
 	public Trump() {
@@ -46,9 +44,7 @@ public class Trump implements Serializable{
 	}
 
 	ArrayList<String> mk = new ArrayList<String>() {
-		/**
-		 *
-		 */
+
 		private static final long serialVersionUID = 5197041044528392078L;
 
 		{
@@ -80,6 +76,7 @@ public class Trump implements Serializable{
 			CardList.remove(index);//いずれかのリストに追加したCardListのインデックスを削除する。
 		}
 	}
+	
 	public Card selectCard(ArrayList<Card> CardList) {//引数に渡したリストからランダムにIndexを選び、Cardを選択する。
 		Random random = new Random();
 		Card selectedCard;
