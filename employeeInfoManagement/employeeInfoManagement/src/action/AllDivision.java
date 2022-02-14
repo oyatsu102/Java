@@ -2,7 +2,6 @@
 package action;
 
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,10 +13,7 @@ public class AllDivision implements CommonLogic{
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		DivisionDAO dao = new DivisionDAO();
 		List<Division> dList = dao.findAll();
-
 		request.setAttribute("dList",dList);//リクエストスコープにインスタンスを保持させる
-
 		return "AllDivision.jsp";
-
 	}
 }
