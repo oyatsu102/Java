@@ -6,11 +6,10 @@ import java.util.Random;
 public class Trump {
 
 	private ArrayList<Card> TrumpList = new ArrayList<Card>(); //カードが格納されているリスト（デッキ）
-	//TrumpList > ArrayListのインスタンス > Card
 
 	//Trumpクラスの明示的コンストラクタ
 	public Trump() {
-		this.createCards();//インスタンス化と同時に実行したい処理、中に書かないと中身がからのまま
+		this.createCards();//インスタンス化と同時に実行したい処理
 	}
 
 	//setter
