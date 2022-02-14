@@ -4,7 +4,6 @@ public class Chip {
 	private int smallerChip;
 	private int biggerChip;
 	public int amtChip;
-	//private
 
 	public void addChip (int chip) {
 		amtChip = amtChip - chip/2;//BETした分をマイナス
@@ -19,11 +18,11 @@ public class Chip {
 	}
 
 	//コンストラクタ
-	public Chip() {
+	public Chip() {//引数なしver.
 		amtChip = 0;
 		biggerChip = 0;
 		smallerChip = 0;
-	}//引数なしver.
+	}
 
 	public Chip(int smallerChip, int biggerChip) {//引数ありver.
 		this.smallerChip = smallerChip;
