@@ -107,7 +107,6 @@ public class WarGame implements Serializable {
 	}
 
 	public void showResult() {//結果の表示
-
 		System.out.println("CPUが切った札：[" + CPUCard + "]");
 		System.out.println("あなたが切った札：[" + playerCard + "]");
 		if (CPUCard.getNumber() > playerCard.getNumber() || CPUCard.getNumber() == 1) {
@@ -129,7 +128,7 @@ public class WarGame implements Serializable {
 
 	public void showFinalResult(SaveGame sg) {
 		boolean yourWin = true;
-
+		
 		System.out.println("### 最終結果 ###");
 		System.out.println("CPUが獲得した札：" + CPUGetCardsNumber + "枚");
 		System.out.println("あなたが獲得した札：" + playerGetCardsNumber + "枚");
