@@ -5,7 +5,6 @@ import java.util.InputMismatchException;
 public class BigOrSmall {
 
 	String continueOrNot = "Yes";//ゲームを続けるかどうか
-	//boolean judgeInputChip = true;//BETされるチップの数を判定
 	int inputChip = 0;//BETするチップ
 	int inputBigOrSmall = 0;//BigかSmallの選択
 	int inputYesOrNo = 0;//YesかNoの選択
