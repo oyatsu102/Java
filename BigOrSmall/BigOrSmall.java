@@ -29,7 +29,7 @@ public class BigOrSmall {
 		cp1.displayChip();
 		System.out.println("****************************");
 		System.out.println();
-		return selectedCardA;//ここでreturnする場合としない場合の違い②
+		return selectedCardA;
 	}
 
 	public void inputChip() {
