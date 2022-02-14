@@ -22,7 +22,7 @@ public class SaveData implements Serializable {
 
 	int playNumber;
 	int winNumber;
-	private static final String OUTPUT_FILE = "/Users/skpoyo8/Desktop/CodeCamp/game_result.csv";
+	private static final String OUTPUT_FILE = "/Applications/Eclipse_2021-12.app/Contents/workspace/WarGame/src/WarGame/game_result.csv";
 
 	List<String> List_GameResult = new ArrayList<String>();//既にゲーム結果の記録があった場合に、中身を読み込んで配列に入れる。
 
@@ -65,9 +65,9 @@ public class SaveData implements Serializable {
 			}
 			//更新した値で書き込み
 			try (
-				FileWriter fw = new FileWriter(OUTPUT_FILE, false); //falseを渡すと上書きされる
-				BufferedWriter bw = new BufferedWriter(fw);
-				PrintWriter out = new PrintWriter(bw);) {
+					FileWriter fw = new FileWriter(OUTPUT_FILE, false); //falseを渡すと上書きされる
+					BufferedWriter bw = new BufferedWriter(fw);
+					PrintWriter out = new PrintWriter(bw);) {
 				out.print("ゲーム回数,勝利回数,最大獲得カード枚数" + "\r\n");
 				out.print(playNumber + ", " + winNumber + ", " + max_getCardsNumber);
 			} catch (IOException e) {
@@ -82,9 +82,9 @@ public class SaveData implements Serializable {
 				max_getCardsNumber = 0;
 			}
 			try (
-				FileWriter fw = new FileWriter(OUTPUT_FILE, true);
-				BufferedWriter bw = new BufferedWriter(fw);
-				PrintWriter out = new PrintWriter(bw);) {
+					FileWriter fw = new FileWriter(OUTPUT_FILE, true);
+					BufferedWriter bw = new BufferedWriter(fw);
+					PrintWriter out = new PrintWriter(bw);) {
 				out.print("ゲーム回数,勝利回数,最大獲得カード枚数" + "\r\n");
 				out.print(1 + ", " + winNumber + ", " + max_getCardsNumber);
 			} catch (IOException e) {

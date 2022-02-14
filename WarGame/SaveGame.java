@@ -12,12 +12,14 @@ import java.nio.file.Paths;
 バイナリファイルに書き込み(シリアライズ)、このファイルをデシリアライズ化してオブジェクトにする。*/
 
 public class SaveGame implements Serializable{
-	
+	/**
+	 *
+	 */
 	private static final long serialVersionUID = 912725257736758369L;
 
 	WarGame wg;//ここでインスタンス化するとオーバーフローする
 
-	private static final String SaveGameFile = "/Users/skpoyo8/Desktop/CodeCamp/SaveGame.dat";
+	private static final String SaveGameFile = "/Applications/Eclipse_2021-12.app/Contents/workspace/WarGame/src/WarGame/SaveGame.dat";
 
 	public void Save(WarGame wg) {//ゲーム結果を保存
 		try (//シリアライズ形式でファイルを書き込み
